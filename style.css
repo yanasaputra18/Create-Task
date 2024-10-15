@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Poppins;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #eed6f5, #d3e6f3);
+}
+.container {
+  width: 400px;
+  background-color: #fff5;
+  max-width: 100vh;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.form {
+  background-color: #fff;
+  border-radius: inherit;
+  padding: inherit;
+}
+.form h3 {
+  margin: 0;
+  text-align: left;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form form textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: Poppins;
+}
+.form form button {
+  background-color: #0d0112;
+  color: #eee;
+  font-family: Poppins;
+  border-radius: 10px;
+  border: none;
+  font-size: small;
+  padding: 15px 10px;
+}
+.List {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.List li .complate-icon svg {
+  width: 20px;
+}
+.List li .close-icon svg {
+  width: 10px;
+}
+.List li {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  gap: 30px;
+  text-align: left;
+  padding: 10px;
+}
+.List li .complate-icon,
+.List li .close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.List li.complate {
+  opacity: 0.5;
+}
+.List li.complate .complate-icon svg {
+  color: green;
+}
